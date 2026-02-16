@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalpana Chaudhari | Portfolio</title>
+
+<style>
+
+/* ========== Universal Selector ========== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ========== Body Styling (Blue-Green + Yellow Gradient) ========== */
+body{
+    background: linear-gradient(135deg,#c8f7eb,#15dfdf,#1de113);
+    color:#222;
+    scroll-behavior:smooth;
+}
+
+/* ========== Navbar ========== */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#ffffff;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+nav h2{
+    color:#1565c0;
+    letter-spacing:2px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#1565c0;
+}
+
+/* ========== Hero Section ========== */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#1565c0;
+    animation:slideDown 1.5s ease;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+    color:#444;
+    animation:fadeIn 2s ease;
+}
+
+/* ========== Explore Button ========== */
+.explore-btn{
+    margin-top:30px;
+    padding:12px 30px;
+    background:#ffffff;
+    color:#1565c0;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.4s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.explore-btn:hover{
+    background:#1565c0;
+    color:white;
+    transform:scale(1.1);
+}
+
+/* ========== About Section ========== */
+section{
+    padding:100px 80px;
+}
+
+.about{
+    background:white;
+    color:#222;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-size:35px;
+    color:#1565c0;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* ========== Skills Section ========== */
+.skills{
+    background:#c8f7f0;
+    text-align:center;
+}
+
+.skills h2{
+    margin-bottom:40px;
+    color:#1565c0;
+}
+
+.skill-box{
+    display:inline-block;
+    background:#ffffff;
+    padding:20px 40px;
+    margin:15px;
+    border-radius:10px;
+    transition:0.4s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.skill-box:hover{
+    background:#1565c0;
+    color:white;
+    transform:translateY(-10px);
+}
+
+/* ========== Contact Section ========== */
+.contact{
+    background:white;
+    color:#222;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+    color:#1565c0;
+}
+
+.contact input,
+.contact textarea{
+    width:60%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    padding:10px 25px;
+    background:#ffffff;
+    color:#1565c0;
+    border:1px solid #1565c0;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.contact button:hover{
+    background:#1565c0;
+    color:white;
+}
+
+/* ========== Footer ========== */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ffffff;
+    color:#1565c0;
+}
+
+/* ========== Animations ========== */
+@keyframes slideDown{
+    from{opacity:0; transform:translateY(-50px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Kalpana</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>Hi, I'm Kalpana 👋</h1>
+    <p>Web Developer | Designer | Creative Thinker</p>
+    <a href="#about" class="explore-btn">Explore More</a>
+</div>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate web developer who loves creating modern,
+        responsive and attractive websites using HTML, CSS and JavaScript.
+        I enjoy designing clean UI with animations and interactive effects.
+    </p>
+</section>
+
+<section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">Django</div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea rows="4" placeholder="Your Message"></textarea><br>
+    <button>Send Message</button>
+</section>
+
+<footer>
+    © 2026 Kalpana Chaudhari | All Rights Reserved
+</footer>
+
+</body>
+</html>
